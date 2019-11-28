@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+ul {
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  margin: 1%;
+}
+
+.procjectsContainer {
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  transition: 0.5s;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project {
+  width: 500px;
+  height: 500px;
+  background-color: #1A1A1A;
+}
+
+.imageInBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 1.5s ease;
+  opacity: 1;
+}
+
+.imageInBox:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
